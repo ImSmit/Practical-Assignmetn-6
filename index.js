@@ -10,7 +10,7 @@ require("dotenv").config();
 const port = 5000
 
 require("dotenv").config();
-//---------------- mongoose --------------------------
+//---------------- hello i am smit --------------------------
 const mongoose = require("mongoose");
 mongoose
  .connect(process.env.MONGOURL)
