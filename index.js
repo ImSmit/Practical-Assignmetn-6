@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 require("dotenv").config();
 
-const port = 5000
+const port = process.env.PORT || 8000;
 
 require("dotenv").config();
 //---------------- mongoose --------------------------
@@ -120,4 +120,4 @@ app.delete("/delete-service/:id", async (req, res) => {
 })
 //-----------------------------------------------------
 
-app.listen(port, () => console.log("App is running on port 5000"));
+app.listen(port, () => console.log(`App is running on port ${port}`));
