@@ -17,7 +17,7 @@ mongoose
  .then(() => console.log("MongoDB is Connected"))
  //---------------------------------------------------
 app.get("/",(req,res) => {
-    res.json({data: "Hello World"})
+    res.json({data: "Welcome To Car Service System"})
 })
 
 //------------------- Add company --------------------
